@@ -1,1 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile-pic {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-pic img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        h1, h2 {
+            color: #555;
+        }
+
+        .skills .skill {
+            margin: 10px 0;
+        }
+
+        .skills .skill .label {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+
+        .skills .skill .progress-bar {
+            background: #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+            height: 20px;
+        }
+
+        .skills .skill .progress-bar span {
+            display: block;
+            height: 100%;
+            background: #4caf50;
+        }
+
+        .icon {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Name Section -->
+        <section id="name">
+            <h1>Name</h1>
+            <p>Priya Alone</p>
+        </section>
+
+        <!-- Email Section -->
+        <section id="email">
+            <h1>Email</h1>
+            <p>priyaalone2017@gmail.com</p>
+        </section>
+
+        <!-- Profile Section -->
+        <section id="profile">
+            <h1>Profile</h1>
+            <p>Web Developer</p>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about-me">
+            <h1>About Me</h1>
+            <p>I am a passionate web developer with experience in creating dynamic and responsive web applications. I love learning new technologies and solving complex problems.</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h1>Skills</h1>
+            <div class="skills">
+                <div class="skill">
+                    <div class="label">
+                        <span><i class="icon fab fa-html5"></i>HTML</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <span style="width: 90%;"></span>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="label">
+                        <span><i class="icon fab fa-css3-alt"></i>CSS</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <span style="width: 85%;"></span>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="label">
+                        <span><i class="icon fab fa-js"></i>JavaScript</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <span style="width: 75%;"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Profile Picture -->
+        <div class="profile-pic">
+            <img src="profile-pic.jpg" alt="Profile Picture">
+        </div>
+    </div>
+</body>
+
+</html>
